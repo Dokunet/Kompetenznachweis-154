@@ -14,7 +14,7 @@ public class CrmApp {
 
     	
         Javalin app = Javalin.create()
-            .port(7070)
+            .port(7072)
             .enableStaticFiles("/public/", Location.CLASSPATH)
             .enableRouteOverview("/routes")
             .start();

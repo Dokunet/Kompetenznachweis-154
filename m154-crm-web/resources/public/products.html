@@ -9,12 +9,12 @@
       <h1><i class="fas fa-plus-square" style="padding-right:6px;"></i>Create Product</h1>
       <form method="post" action="/createproduct">
          <label>Description:</label>
-         <br /><input type="text" name="description"/>
+         <br /><input id="productText" type="text" name="description"/>
 
          <p/>
-            <input type="submit" value="Save"/>
+            <input id="submitProduct" type="submit" value="Save"/>
       </form>
-      <span style="color:green" th:text="${msg != null} ? ${msg}"></span>
+      <span id="infoSpan" style="color:green" th:text="${msg != null} ? ${msg}"></span>
       <br />
       <br />
       <br />
@@ -22,9 +22,9 @@
       <form method="post" action="/product">
          <label>Please insert product id:</label>
          <br />
-         <input type="text" name="id"/>
+         <input id="searchProduct" type="text" name="id"/>
          <p/>
-            <input value="Search" type="submit"/>
+            <input id="searchButton" value="Search" type="submit"/>
       </form>
       <br />
    </body>
