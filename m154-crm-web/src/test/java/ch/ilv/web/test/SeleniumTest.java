@@ -57,6 +57,7 @@ public class SeleniumTest {
 		WebElement result;
 		result = driver.findElement(By.id("result"));
 		assertTrue(result.getText().trim().contains("testproduct"));
+		driver.close();
 	}
 
 
