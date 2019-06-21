@@ -2,7 +2,7 @@ FROM openjdk:8u191-jdk-alpine3.9
 
 MAINTAINER Mike "test@test123456.com"
 
-EXPOSE 7070
+EXPOSE 7072
 
 WORKDIR /usr/local/bin
 
